@@ -35,8 +35,7 @@ const createTodo = async(todo) => {
 const getTodo = async (id) => {
     let response = fetch('https://jsonplaceholder.typicode.com/posts/1')
     let r = await response.json()
-        
-  .then((json) => console.log(json));
+    return r       
 }
 
 const mainFunc = async () => {
