@@ -33,7 +33,7 @@ const createTodo = async(todo) => {
 }
 
 const getTodo = async (id) => {
-    let response = fetch('https://jsonplaceholder.typicode.com/posts/1')
+    let response = fetch('https://jsonplaceholder.typicode.com/posts/1'+ id)
     let r = await response.json()
     return r       
 }
@@ -46,6 +46,7 @@ const mainFunc = async () => {
         }
     let todoResponse = await createTodo(todo)
     console.log(todoResponse)
+    console.log(getTodo(567))
 }
 
 mainFunc()
