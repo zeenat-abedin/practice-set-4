@@ -34,7 +34,6 @@ const sleep = async(seconds) => {
 
 const showHack = async(message) => {
     sleep(2)
-    console.log(message)
     text.innerHTML = text.innerHTML + "<br>"+ message;
 }
 
