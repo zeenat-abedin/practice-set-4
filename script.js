@@ -9,16 +9,6 @@ setInterval(() => {
     time.innerHTML = d   
 }, 1000);
 
-/* Write a JS program to pretend to look like a hacker. Write an async function which will simply display the following output
-
-Initializing Hack program...
-Hacking Ashish username...
-Username found ashish17...
-Connecting to facebook...
-
-Try to use HTML and styling if possible */
-
-
 //Sending POST request with Fetch API
 
 const createTodo = async(todo) => {
